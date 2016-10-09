@@ -1,5 +1,3 @@
 font in background is showcard gothic.
 It was processed using Paint.net.
 The font height is 96
-
-The background purple is from the Tandom School of Engineering webpage.
