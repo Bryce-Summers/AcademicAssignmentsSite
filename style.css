@@ -129,6 +129,14 @@ a
     text-decoration: none;
 }
 
+a#b
+{
+     /* SLightly Darker Blue. */
+    /*color: #00a0b2;*/
+    color: #0066ff;
+    text-decoration: none;   
+}
+
 a:hover
 {
     background-color: white;
@@ -172,4 +180,9 @@ table td
 {
     /* White Text */
     color: #ffffff;
+}
+
+img
+{
+    width: 300px;    
 }
