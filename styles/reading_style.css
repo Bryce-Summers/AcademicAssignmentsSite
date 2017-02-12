@@ -5,7 +5,7 @@ html
 { 
 
 	/*background: url(./Logo.png) no-repeat center center fixed;*/
-    background-color: #000000;
+    background-color: #E5E5E5;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -18,7 +18,7 @@ html
 
 body
 {
-    /* background-color: #57068C; */
+    background-color: #ffffff;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -38,7 +38,7 @@ h1,h2,h3
     /* Font Color */
     /*color: #00E5FF;*/
     /* Analagous Green color to go with the blue links. */
-    color: #00FF9A;
+    color: #000000;
 
 }
 
@@ -47,7 +47,7 @@ h1
     max-width: 100%;
 
 	font-size: 300%;
-	color: #ffffff;
+	color: #000000;
 	text-align: center;
 	opacity: 1.0;
 	
@@ -72,11 +72,24 @@ h2
 
 	opacity: 1.0;
 	font-family: 'Poiret One', cursive;
+    padding-left: 25px;
+}
+
+date
+{
+    font-size: 100%;
+    
+    text-align: left;
+
+    opacity: 1.0;
+    font-family: 'Poiret One', cursive;
+    padding-left: 25px;
 }
 
 h2 > a
 {
-	color: inherit;
+	/*color: inherit;*/
+
 } 
 
 h3
@@ -85,6 +98,7 @@ h3
 	text-align: center;
 	opacity: 1.0;
 	font-family: 'Poiret One', cursive;
+    color: #aaaaaa;
 }
 
 h3 > a
@@ -118,7 +132,10 @@ p
 	text-indent: 5em;
 	vertical-align: middle;
 	line-height: 200%;
-    color: #ffffff;
+    color: #111111;
+
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 /* All links will be displayed in blue. */
@@ -139,8 +156,8 @@ a#b
 
 a:hover
 {
-    background-color: white;
-    color:black;
+    background-color: black;
+    color:white;
 }
 
 .centeredImage
@@ -186,7 +203,3 @@ img
 {
     width: 300px;    
 }
-
-/* Odd / Even rules for table rows */
-tr:nth-child(even){background: #333333}
-tr:nth-child(odd) {background: #000000}
