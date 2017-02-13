@@ -152,8 +152,8 @@ a:hover
 ul li {
     /*padding-left: 15px;*/
 	list-style-position:inside;
-	font-size: 200%;	
-	line-height: 200%;
+	
+    color: white;
 }
 
 ol li {
