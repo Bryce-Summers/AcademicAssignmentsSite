@@ -144,17 +144,40 @@ This week I implemented functionalities related to Cubic curves. Users can now:
 I learned something new this week! Evidently I've been appreciating Hermite curves for their lovely representations using points and tangents. Bezier curves on the other hand are made from sequences of control points that involve layers of linear interpolation. I was happy to learn that Hermite curves are equivalent to Bezier curves with tangents scaled up by a factor of 3. I continue to think about splines over the years, but they continue to amaze me in their usefulness, elegance, and depth.
 
 </td>
-<a href="https://bryce-summers.github.io/ScribbleJS/examples/bezier_curves.html">Demo!
-<a href="https://github.com/Bryce-Summers/ScribbleJS/blob/master/examples/src/bezier_curves.js">Code!</td>
-<td> <a href="https://brycesummers.wordpress.com/2014/09/24/cubic-spline/">Blog Post about cubic spline mathematics.</a>
+<td><a href="https://bryce-summers.github.io/ScribbleJS/examples/bezier_curves.html">Demo!
+<a href="https://github.com/Bryce-Summers/ScribbleJS/blob/master/examples/src/bezier_curves.js">Code!
+<a href="https://brycesummers.wordpress.com/2014/09/24/cubic-spline/">Blog Post about cubic spline mathematics.</a>
 <a href="https://brycesummers.wordpress.com/2014/09/24/cubic-spline/">Blog Post about cubic spline mathematics.</a>
 <a href="https://en.wikipedia.org/wiki/De_Casteljau's_algorithm"> De Casteljau's Algorithm </a>
 <a href="https://courses.engr.illinois.edu/cs418/sp2009/notes/12-MoreSplines.pdf">Spline Conversions</a>
+</td>
 </tr>
 
 <tr>
-<td>2.28.2017</td>
+<td>3.6.2017</td>
 <td>Internal Continents</td>
+<td>
+    This week, I worked on handling the drawing of internal continents and the embedding of internal complemented lines.<br>
+    Firstly, I fixed a bug in the eraser tool, where it is now rendering internal continents overtop of the faces that they are embedded on top of. I accomplished this by sorting all of the faces by area. A natural benefit is that complemented faces have negetive area, so they are last in the sorted order, which is great, because they are drawn as boundary line segments, without interiors, so they are highlighted as white over top of everything, but it they don't obscure any of the internal regions for the other faces.<br>
+    <a href="https://bryce-summers.github.io/ScribbleJS/examples/eraser_tool.html"><br>
+    <img src="constant_inputs_images/internal_continent_correct3.png" alt=""><br>
+    </a>
+
+    For comparison, this is an example of the previous erroneous behavior, where the internal face was occluded by a large enclosing face.
+    <br>
+    <img src="constant_inputs_images/internal_continent_error.png" alt="">
+    <br>
+
+
+</td>
+<td>
+    <a href="https://bryce-summers.github.io/ScribbleJS/examples/">Demo!</a>
+</td>
+</tr>
+
+<tr>
+<td>Future</td>
+<td>[???]</td>
 <td>
 
 <a href="https://bryce-summers.github.io/ScribbleJS/examples/"><br>
@@ -162,7 +185,9 @@ I learned something new this week! Evidently I've been appreciating Hermite curv
 </a>
 
 </td>
-<a href="https://bryce-summers.github.io/ScribbleJS/examples/">Demo!
+<td>
+    <a href="https://bryce-summers.github.io/ScribbleJS/examples/">Demo!</a>
+</td>
 </tr>
 
 <tr>
@@ -197,7 +222,7 @@ Fix up line segment intersection functions for intersection reporting and monoli
 
     <br>
     Compute the Geometric Filled Regions that coorespond to beams of light traveling through a scene.
-    I will spend this week ironing out the last bugs.
+    I will spend this week ironing out the last bugs. TODO: Consider moving hole representations as native properties of a Halfedge Graph.
     </td>
 <td>
 <a href="https://bryce-summers.github.io/2DBeam_Tracer/">Online Demo!</a>
