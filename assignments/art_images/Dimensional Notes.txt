@@ -1,0 +1,7 @@
+Standard Poster Size:
+
+24 by 37 inches.
+
+Pixels at 300 dpi forr printing:
+
+7200 by 10800
