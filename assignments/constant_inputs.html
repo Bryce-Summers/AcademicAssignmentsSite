@@ -168,10 +168,35 @@ I learned something new this week! Evidently I've been appreciating Hermite curv
     <img src="constant_inputs_images/internal_continent_error.png" alt="">
     <br>
 
-
 </td>
 <td>
     <a href="https://bryce-summers.github.io/ScribbleJS/examples/">Demo!</a>
+</td>
+</tr>
+
+
+
+<tr>
+<td>3.27.2017</td>
+<td>Holes</td>
+<td>
+    This week, I've been continuing working on Hole rendering, embedding, and collision detection.
+    <br>
+    <a href="https://bryce-summers.github.io/ScribbleJS/examples/hole_tool.html"><br>
+    <img src="constant_inputs_images/hole_tool_bryce.png" alt=""><br>
+    </a><br>
+
+    I've begun to integrate the canvas and SVG even-odd path rendering into the Scribble.JS representations.
+    I've also implemented primitivve collision detection, where a geometry <b>G</b> intersects a shape <b>S</b> with a hole <b>H</b>
+    if and only if <b>G</b> intersects <b>S</b>, but not <b>H</b>. To improve this, I should instead detect intersections when
+    <b>G</b> intersects <b>S</b> and <b>G</b> is not contained within the interior of <b>H</b>. <br><br>
+
+    Another challenge is figuring out how treat the holes as native objects within the halfedgegraph.
+    This will perhaps require me to start doing 2D Constructive Solid Geometry.
+
+</td>
+<td>
+    <a href="https://bryce-summers.github.io/ScribbleJS/examples/hole_tool.html">Demo!</a>
 </td>
 </tr>
 
