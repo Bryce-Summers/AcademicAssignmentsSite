@@ -258,12 +258,12 @@ I learned something new this week! Evidently I've been appreciating Hermite curv
 
     Here are some next steps:
     <ul>
-    <li> Allowing self intersecting curves, I've been procrastinating on getting to this.
-    <li> SVG loading feature. This may be involved. I may only support svg files exported by this program.
-    <li> Vertex movement. Wouldn't it be awesome if users like you could drag a node to modify an illustration.
-    <li> Maybe if I get movement working, I'll get around to some animation.
-    <li> I still want to integrate my beam tracer, since it is amazing and I'm not sure people realize how amazing it is because I didn't quite finish it enough to show people its amazing capabilities and potential after I stopped working on it last summer.
-    </li>
+    <li> Allowing self intersecting curves, I've been procrastinating on getting to this.</li>
+    <li> SVG loading feature. This may be involved. I may only support svg files exported by this program.</li>
+    <li> Vertex movement. Wouldn't it be awesome if users like you could drag a node to modify an illustration.</li>
+    <li> Maybe if I get movement working, I'll get around to some animation.</li>
+    <li> I still want to integrate my beam tracer, since it is amazing and I'm not sure people realize how amazing it is because I didn't quite finish it enough to show people its amazing capabilities and potential after I stopped working on it last summer.</li>
+    </ul>
 
 </td>
 <td>
@@ -271,9 +271,53 @@ I learned something new this week! Evidently I've been appreciating Hermite curv
 </td>
 </tr>
 
+<div id="4_29_17"></div>
+<tr>
+<td>Apr.29.17</td>
+<td>Self Intersecting Line Drawing</td>
+<td>
+
+This week, I tackled the self intersecting line problem. I had already solved the static case, but I've worked on integrating self-intersecting lines into the draing tool. <br><br>
+
+A user can start out with a self-intersecting line.<br>
+<a href="constant_inputs_images/self_intersections.png">
+<img src="constant_inputs_images/self_intersections.png" alt="Self intersecting line picture 1."></a><br>
+It will produce a segmented scribble with no trouble, but it is not yet robust many cases, such as when intersections are spaced close to each other. This issue of numerical stability and topological degeneracy will be addressed in the future by combining elements that are close to each other.<br>
+
+<a href="constant_inputs_images/self_intersections2.png">
+<img src="constant_inputs_images/self_intersections2.png" alt="Self intersecting line picture 2."></a><br>
+A user can then draw another line on top of the drawing, again making use of a self_intersection.<br>
+
+<a href="constant_inputs_images/self_intersections3.png">
+<img src="constant_inputs_images/self_intersections3.png" alt="Self intersecting line picture 3."></a><br>
+The Scribble is again segmented correctly.
+
+<a href="constant_inputs_images/self_intersections4.png">
+<img src="constant_inputs_images/self_intersections4.png" alt="Self intersecting line picture 4."></a><br>
+
+Here are some next steps:
+    <ul>
+    <li> Fixing Numerical Stability issues.</li>
+    <li> Merging vertices near edges.</li>
+    <li> Merging Vertices near vertices.</li>
+    <li> Implementing a freeform line tool that draws a curve with the mouse, in contrast to the original click based straight line tool.</li>
+    <li> Bezier line tool. We have the mathematics, now we just need the UI.</li>
+    </ul>
+
+
+</td>
+<td> <a href="https://bryce-summers.github.io/ScribbleJS/examples/editor.html">Demo!</a><br>
+     <a href="constant_inputs_images/self_intersections4.svg">SVG File</a><br>
+     <a href="constant_inputs_images/self_intersections.svg">Red Lines SVG File</a><br>
+</td>
+</tr>
+
+
+
 <tr>
 <td>Future</td>
 <td>Future</td>
+
 
 
 <td>
