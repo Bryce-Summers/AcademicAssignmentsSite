@@ -312,6 +312,32 @@ Here are some next steps:
 </td>
 </tr>
 
+<div id="5_1_17"></div>
+<tr>
+<td>May.1.17</td>
+<td>Drag Line Drawing Tool</td>
+<td>
+
+This week, I've implemented a draggable line drawing tool, where the users can create freeform paths in a less controlled manner than the click line drawing tool.<br><br>
+
+<a href="constant_inputs_images/drag_line_tool.svg">
+<img src="constant_inputs_images/drag_line_tool.png" alt="Draggable Line Tool."></a><br>
+<a href="constant_inputs_images/drag_line_bryce.svg">
+<img src="constant_inputs_images/drag_line_bryce.png" alt="Bryce letter forms using drag line tool."></a><br>
+
+Here are some thoughts:
+    <ul>
+    <li> The freeform line tool produces a lot more vertices, but fewer intersections per vertex. This is similar to the cercumstances found in my
+    <a href="https://github.com/Bryce-Summers/SimUrban">Sim Urban</a> game.</li>
+    <li> I think that this tool taxes the topology update functions too much, especially when they need to relink a face. I could probably optimize this process using a union-find structure or other tricks.</li>
+    <li> I wonder whether the Bounding volume hiearchies are performing well? I am doing any load rebalancing yet.</li>
+    </ul>
+
+
+</td>
+<td> <a href="https://bryce-summers.github.io/ScribbleJS/examples/editor.html">Demo!</a><br>
+</td>
+</tr>
 
 
 <tr>
