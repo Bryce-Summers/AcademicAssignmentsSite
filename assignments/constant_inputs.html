@@ -235,7 +235,7 @@ I learned something new this week! Evidently I've been appreciating Hermite curv
 <td>SVG File Saving</td>
 <td>
     
-    This week, I added a button to the editor that allows users to save their work as a self contained svg file.
+    This week, I added a button to the editor that allows users to save their work as a self contained svg file. Note: SVG stands for Scalable Vector Graphics.
 
     <br>
     <a href="https://bryce-summers.github.io/ScribbleJS/examples/editor.html"><br>
@@ -339,6 +339,50 @@ Here are some thoughts:
 </td>
 </tr>
 
+<div id="5_10_17"></div>
+<tr>
+<td>May.10.17</td>
+<td>PNG File Saving</td>
+<td>
+
+As of this week, users can save PNG files of their work with transparent backgrounds. Note: PNG stands for Portable Network Graphics and they may be used to store fixed resolution views of a scene, whereas SVG (Scalable Vector Graphics) files store the mathematical forms themselves, which may then be manipulated and modified in useful ways in vector graphics applications.
+<br><br>
+
+<a href="constant_inputs_images/save_png.png">
+<img src="constant_inputs_images/save_png.png" alt="Saved PNG image."></a><br>
+
+Here are some thoughts:
+    <ul>
+    <li> Right now the images are exported at a fixed resolution of around 1200 by 800. Perhaps I should change this when I get some menu systems in.</li>
+    <li> At first I was accidently exporting the menu buttons in the png files. To fix this, I redraw the screen without the UI before exporting the picture.</li>
+    <li> The drawing will have a transparent background, I'm not sure if the white lines are the most useful default setting for people,
+    but this feature is mainly a convenience for people who want a quick image.</li>
+    <li> I've done some house keeping on the wording of the tools and I think that some feedback would do the users good regarding then the line may be completed. Like in my Sim Urban project, a user should see a green line when their mouse is in a complete state.</li>
+    </ul>
+
+</td>
+<td> <a href="https://bryce-summers.github.io/ScribbleJS/examples/editor.html">Demo!</a><br>
+</td>
+</tr>
+
+<div id="5_??10_17"></div>
+<tr>
+<td>May.15.17</td>
+<td>Vertex Movements (Coming along)</td>
+<td>
+
+<br><br>
+
+Thoughts:
+    <ul>
+    <li>The lines will be able to automatically re-embed themselves.</li>
+    <li>Future features should include the ability to mark vertices as bezier vertices and allow for the user to modify them.</li>
+    </ul>
+
+</td>
+<td> <a href="https://bryce-summers.github.io/ScribbleJS/examples/editor.html">Demo!</a><br>
+</td>
+</tr>
 
 <tr>
 <td>Future</td>
@@ -360,7 +404,11 @@ Here are some thoughts:
 <tr>
 <td>Future</td>
 <td>Symmetry</td>
-<td>[DESCRIPTION] Ideas: Editing positions. Expanding network from previous nodes. Bezier curve input / output. Flows. User input.
+<td>
+
+Improve user feedback in the editor. Handle tough numerically and geometrically degenerate situations.
+
+[DESCRIPTION] Ideas: Editing positions. Expanding network from previous nodes. Bezier curve input / output. Flows. User input.
 
 Areas. Smoothing. Symmetry. Randomized bouncing of a geometric form that results in a particular behavior.
 A study of popcorn probability. Beaches and Oceans.
